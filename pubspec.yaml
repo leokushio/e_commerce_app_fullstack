@@ -1,0 +1,48 @@
+name: e_commerce_app_fullstack
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.8
+  flutter:
+    sdk: flutter
+  get: ^4.6.6
+  iconsax: ^0.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  #---------------local Assets-----------------#
+  assets:
+    - assets/logos/
+    - assets/icons/
+    - assets/images/
+
+  #--------------lacal fonts-----------------#
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets\fonts\Poppins-Italic.ttf
+          style: italic
+        - asset: assets\fonts\Poppins-Light.ttf
+          weight: 300
+        - asset: assets\fonts\Poppins-Regular.ttf
+          weight: 400
+        - asset: assets\fonts\Poppins-Medium.ttf
+          weight: 500
+        - asset: assets\fonts\Poppins-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets\fonts\Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 800
