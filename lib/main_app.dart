@@ -10,6 +10,9 @@ class MainApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
+      home: Center(
+        child: ElevatedButton(onPressed: () {}, child: Text('H e l l o !')),
+      ),
       
     );
   }
