@@ -9,4 +9,9 @@ class TImages {
   // -- Social Logos --
   static const String google = 'assets/logos/google_logo.png';
   static const String facebook = 'assets/logos/facebook_logo.png';
+
+  // -- OnBoarding Images/GIF --
+  static const onBoardingImage1 = 'assets/images/on_boarding_images/sammy-searching.gif';
+  static const onBoardingImage2 = 'assets/images/on_boarding_images/sammy-shopping.gif';
+  static const onBoardingImage3 = 'assets/images/on_boarding_images/sammy-delivery.gif';
 }

@@ -8,7 +8,7 @@ class TTexts{
   // -- OnBoarding Text
   static const String onBoardingTitle1 = "Choose your product";
   static const String onBoardingTitle2 = "Select Payment Method";
-  static const String onBoardingTitle3 = "Deliver ath your door step";
+  static const String onBoardingTitle3 = "Deliver at your door step";
 
   static const String onBoardingSubTitle1 = "Welcome to a World of Limitless Choices - Your Perfect Product Awaits!";
   static const String onBoardingSubTitle2 = "For Seemless Transaction, Choose Your Payment Path - Your Convinience, Our Priority";
