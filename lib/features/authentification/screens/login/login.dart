@@ -1,10 +1,56 @@
+import 'package:e_commerce_app_fullstack/common/styles/spacing_styles.dart';
+import 'package:e_commerce_app_fullstack/common/widgets/login_signup/form_divider.dart';
+import 'package:e_commerce_app_fullstack/common/widgets/login_signup/social_buttons.dart';
+import 'package:e_commerce_app_fullstack/features/authentification/screens/login/widgets/login_form.dart';
+import 'package:e_commerce_app_fullstack/features/authentification/screens/login/widgets/login_header.dart';
+import 'package:e_commerce_app_fullstack/utils/constants/colors.dart';
+import 'package:e_commerce_app_fullstack/utils/constants/image_string.dart';
+import 'package:e_commerce_app_fullstack/utils/constants/sizes.dart';
+import 'package:e_commerce_app_fullstack/utils/constants/text_strings.dart';
+import 'package:e_commerce_app_fullstack/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
 
-class LoginScreem extends StatelessWidget {
-  const LoginScreem({super.key});
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    final dark = THelperFunctions.isDarkMode(context);
+
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: TSpacingStyle.paddingWithAppBarHeight,
+          child: Center( //center widget is not part of original code
+            child: Column(
+              children: [
+                // Logo, Title & Sub-Title
+                const TLoginHeader(),
+            
+                const TLoginForm(),
+
+                // Divider
+                TFormDivider(dividerText: TTexts.orSignInWith.capitalize!,),
+                const SizedBox(height: TSizes.spaceBtwSections,),
+
+                // Footer Google & Facebook login
+                const TSocialButtons()
+
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
+
+
+
+
+
+
+

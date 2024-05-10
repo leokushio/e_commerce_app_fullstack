@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:e_commerce_app_fullstack/utils/constants/sizes.dart';
+
 
 class TTextFormFieldTheme {
   TTextFormFieldTheme._();
@@ -8,7 +10,8 @@ class TTextFormFieldTheme {
     errorMaxLines: 3,
     prefixIconColor: Colors.grey,
     suffixIconColor: Colors.grey,
-    // constrains: const BoxConstrains.expand(height: 14.inputFieldHeight),
+    contentPadding: const EdgeInsets.symmetric(vertical: TSizes.md),
+    // constraints: BoxConstraints.expand(height: 14.inputFieldHeight),
     labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
     hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
     errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
@@ -40,6 +43,7 @@ class TTextFormFieldTheme {
     errorMaxLines: 3,
     prefixIconColor: Colors.grey,
     suffixIconColor: Colors.grey,
+    contentPadding: const EdgeInsets.symmetric(vertical: TSizes.md),
     // constrains: const BoxConstrains.expand(height: 14.inputFieldHeight),
     labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.white),
     hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.white),

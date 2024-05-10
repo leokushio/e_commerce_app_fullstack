@@ -27,8 +27,12 @@ class AuthenticationRepository extends GetxController {
     // local storage
     deviceStorage.writeIfNull('isFirstTime', true);
     deviceStorage.read('isFirstTime') != true 
-    ? Get.offAll(() => const LoginScreem()) 
+    ? Get.offAll(() => const LoginScreen()) 
     : Get.offAll(const OnBoardingScreen());
+
+    // -- FOR TESTING, COMMENT ABOVE IF STATEMENT
+    // -- AND ADD BELOW STATEMENT TO ALWAYS SEE "OnboardingScreen"
+    // Get.offAll(const OnBoardingScreen());
   }
 
   /* ------------------- Email & Password sign_in ----------------------*/
