@@ -7,6 +7,7 @@ class TTexts{
   static const String submit = "Submit";
   static const String appName = "ShopZone";
   static const String tContinue = "Continue";
+  static const String done = "Done";
 
   // -- OnBoarding Text
   static const String onBoardingTitle1 = "Choose your product";
@@ -43,7 +44,7 @@ class TTexts{
   static const String loginTitle = "Welcome Back,";
   static const String loginSubTitle = "Discover Limitless Choices and Unmatched Convinience.";
   static const String signUpTitle = "Let's create your account";
-  static const String forgetPasswordTitle = "Forget password";
+  static const String forgetPasswordTitle = "Forgot password";
   static const String forgetPasswordSubTitle = "Don't worry sometimes people can forget too, enter you email and we will send you a password reset link.";
   static const String changeYourPasswordTitle = "Password reset email sent!";
   static const String changeYourPasswordSubTitle = "Your account security is our priority! We've sent you a secure link to safely change your passwor and keep you account protected.";

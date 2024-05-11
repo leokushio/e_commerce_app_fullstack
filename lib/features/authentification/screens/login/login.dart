@@ -3,15 +3,11 @@ import 'package:e_commerce_app_fullstack/common/widgets/login_signup/form_divide
 import 'package:e_commerce_app_fullstack/common/widgets/login_signup/social_buttons.dart';
 import 'package:e_commerce_app_fullstack/features/authentification/screens/login/widgets/login_form.dart';
 import 'package:e_commerce_app_fullstack/features/authentification/screens/login/widgets/login_header.dart';
-import 'package:e_commerce_app_fullstack/utils/constants/colors.dart';
-import 'package:e_commerce_app_fullstack/utils/constants/image_string.dart';
 import 'package:e_commerce_app_fullstack/utils/constants/sizes.dart';
 import 'package:e_commerce_app_fullstack/utils/constants/text_strings.dart';
 import 'package:e_commerce_app_fullstack/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

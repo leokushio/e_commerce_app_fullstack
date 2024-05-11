@@ -2,11 +2,7 @@ import 'package:e_commerce_app_fullstack/utils/constants/colors.dart';
 import 'package:e_commerce_app_fullstack/utils/constants/sizes.dart';
 import 'package:e_commerce_app_fullstack/utils/constants/text_strings.dart';
 import 'package:e_commerce_app_fullstack/utils/helpers/helper_functions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 class TTermAndConditionsCheckbox extends StatelessWidget {
   const TTermAndConditionsCheckbox({
@@ -35,7 +31,7 @@ class TTermAndConditionsCheckbox extends StatelessWidget {
                 ),
               TextSpan(text: '${TTexts.and} ', style: Theme.of(context).textTheme.bodySmall),
               TextSpan(
-                text: '${TTexts.termsOfUse}', 
+                text: TTexts.termsOfUse, 
                 style: Theme.of(context).textTheme.bodyMedium!.apply(
                   color: dark ? TColors.white : TColors.primary,
                   decoration: TextDecoration.underline,

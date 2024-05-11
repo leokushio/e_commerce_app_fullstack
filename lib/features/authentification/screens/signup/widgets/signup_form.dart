@@ -1,8 +1,9 @@
+import 'package:e_commerce_app_fullstack/features/authentification/screens/signup/verify_email.dart';
 import 'package:e_commerce_app_fullstack/features/authentification/screens/signup/widgets/terms_conditions_checkbox.dart';
 import 'package:e_commerce_app_fullstack/utils/constants/sizes.dart';
 import 'package:e_commerce_app_fullstack/utils/constants/text_strings.dart';
-import 'package:e_commerce_app_fullstack/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TSignupForm extends StatelessWidget {
@@ -12,7 +13,6 @@ class TSignupForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
     return Form(
       child: Column(
         children: [
@@ -82,12 +82,13 @@ class TSignupForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: (){}, child: const Text(TTexts.createAccount
-              )),
+              onPressed: () => Get.to(() => const VerifyEmailScreen()), 
+              child: const Text(TTexts.createAccount),
             )
+          ),
         ],
       )
-      );
+    );
   }
 }
 

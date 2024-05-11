@@ -14,4 +14,9 @@ class TImages {
   static const onBoardingImage1 = 'assets/images/on_boarding_images/sammy-searching.gif';
   static const onBoardingImage2 = 'assets/images/on_boarding_images/sammy-shopping.gif';
   static const onBoardingImage3 = 'assets/images/on_boarding_images/sammy-delivery.gif';
+
+  // -- Signup Images --
+  static const accountCreated = 'assets/images/signup_images/account-created.gif';
+  static const verifyEmail = 'assets/images/signup_images/email-sent.gif';
+
 }

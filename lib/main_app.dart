@@ -1,4 +1,3 @@
-import 'package:e_commerce_app_fullstack/features/authentification/screens/onboarding/onboarding.dart';
 import 'package:e_commerce_app_fullstack/utils/constants/colors.dart';
 import 'package:e_commerce_app_fullstack/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
