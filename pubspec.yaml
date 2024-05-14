@@ -18,6 +18,8 @@ dependencies:
   http: ^1.2.1
   flutter_native_splash: ^2.4.0
   smooth_page_indicator: ^1.1.0
+  lottie: ^3.1.0
+  connectivity_plus: ^6.0.3
 
   # Icons
   iconsax: ^0.0.8
@@ -44,6 +46,7 @@ flutter:
     - assets/icons/
     - assets/images/on_boarding_images/
     - assets/images/signup_images/
+    - assets/images/common/
 
   #--------------lacal fonts-----------------#
   fonts:

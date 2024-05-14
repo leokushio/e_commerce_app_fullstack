@@ -19,4 +19,10 @@ class TImages {
   static const accountCreated = 'assets/images/signup_images/account-created.gif';
   static const verifyEmail = 'assets/images/signup_images/email-sent.gif';
 
+  // -- Success Images --
+  static const success = 'assets/images/common/success_image.gif';
+
+  // -- loader lottie
+  static const circleLoader = 'assets/images/common/circle-loader.json';
+
 }

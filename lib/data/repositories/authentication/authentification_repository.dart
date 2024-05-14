@@ -1,5 +1,3 @@
-
-
 import 'package:e_commerce_app_fullstack/features/authentification/screens/login/login.dart';
 import 'package:e_commerce_app_fullstack/features/authentification/screens/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
@@ -26,13 +24,13 @@ class AuthenticationRepository extends GetxController {
   screenRedirect() async {
     // local storage
     deviceStorage.writeIfNull('isFirstTime', true);
-    // deviceStorage.read('isFirstTime') != true 
-    // ? Get.offAll(() => const LoginScreen()) 
-    // : Get.offAll(const OnBoardingScreen());
+    deviceStorage.read('isFirstTime') != true 
+    ? Get.offAll(() => const LoginScreen()) 
+    : Get.offAll(const OnBoardingScreen());
 
     // -- FOR TESTING, COMMENT ABOVE IF STATEMENT
     // -- AND ADD BELOW STATEMENT TO ALWAYS SEE "OnboardingScreen"
-    Get.offAll(const OnBoardingScreen());
+    // Get.offAll(const OnBoardingScreen());
   }
 
   /* ------------------- Email & Password sign_in ----------------------*/
